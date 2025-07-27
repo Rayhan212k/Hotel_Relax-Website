@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hotel Relax</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Unicons -->
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+  <style>
+    .nav_link:nth-child(1) {
+        color: blue; 
+    }
+</style>
+</head>
+
+<body>
+
+  <!-- ----------------------HEADER START---------------------------- -->
+  <header class="header">
+    <nav class="nav">
+      <a href="index.html" class="nav_logo">
+        <img src="Image/Logo.png" alt="Logo">
+      </a>
+
+      <ul class="nav_items">
+        <li class="nav_item">
+          <a href="index.html" class="nav_link">Home</a>
+          <a href="about.html" class="nav_link">About Us</a>
+          <a href="service.html" class="nav_link">Services</a>
+          <a href="contact.html" class="nav_link">Contact</a>
+        </li>
+      </ul>
+
+      <button class="button" id="form-open">Login</button>
+      <button class="button" id="user_info" style="display: none;">UserName</button>
+      <button class="button" id="logout" style="display: none;">Logout</button>
+
+    </nav>
+  </header>
+  <!-- -------------------------HEADER END---------------------------- -->
+
+
+
+
+  <!-- -------------------------LOGIN AND SIGN UP FORM START---------------------------- -->
+  <!-- Home -->
+  <div class="home">
+    <div class="form_container">
+      <i class="uil uil-times form_close"></i>
+
+      <!-- Login From -->
+      <div class="form login_form">
+        <form action="#" id="login-form">
+          <h2>Login</h2>
+
+          <div class="input_box">
+            <input type="email" placeholder="Enter your email" required />
+            <i class="uil uil-envelope-alt email"></i>
+          </div>
+          <div class="input_box">
+            <input type="password" placeholder="Enter your password" required />
+            <i class="uil uil-lock password"></i>
+            <i class="uil uil-eye-slash pw_hide"></i>
+          </div>
+          <div class="option_field">
+            <span class="checkbox">
+              <input type="checkbox" id="check" />
+              <label for="check">Remember me</label>
+            </span>
+            <a href="#" class="forgot_pw">Forgot password?</a>
+          </div>
+
+          <button class="button">Login</button>
+
+          <div class="login_signup">Don't have an account? <a href="#" id="signup">Sign up</a></div>
+        </form>
+      </div>
+
+
+      <!-- Signup Form -->
+      <div class="form signup_form">
+        <form action="#" id="signup-form">
+          <h2>Registration</h2>
+
+          <div class="input_box">
+            <input type="text" placeholder="Enter your name" required />
+            <i class="uil uil-user name"></i> <!-- Icon for name -->
+          </div>
+          <div class="input_box">
+            <input type="tel" placeholder="Enter your phone" required />
+            <i class="uil uil-phone phone"></i> <!-- Icon for phone -->
+          </div>
+          <div class="input_box">
+            <input type="email" placeholder="Enter your email" required />
+            <i class="uil uil-envelope-alt email"></i>
+          </div>
+          <div class="input_box">
+            <input type="password" placeholder="Create password" required />
+            <i class="uil uil-lock password"></i>
+            <i class="uil uil-eye-slash pw_hide"></i>
+          </div>
+
+          <button class="button">Sign Up</button>
+
+          <div class="login_signup">Already have an account? <a href="#" id="login">Login</a></div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <!-- ------------------LOGIN AND SIGN UP FORM END---------------------------- -->
+
+
+
+  <!-- ---------------------------USER INFORMATION START--------------------------- -->
+
+  <!-- USER INFORMATION DISPLAY -->
+  <div class="userInfo" style="display: none;">
+    <div class="user-info-content">
+      <h2>Profile</h2>
+      <p>Name: <span id="user-name"></span></p>
+      <p>Phone: <span id="user-phone"></span></p>
+      <p>Email: <span id="user-email"></span></p>
+      <button id="ok-btn">OK</button>
+    </div>
+  </div>
+
+
+
+  <!-- ---------------------------USER INFORMATION END--------------------------- -->
+
+
+
+
+  <!-- ------------------------HOME PAGE CONTENT START---------------------------- -->
+  <div class="index">
+
+    <div class="div3">
+      <div class="column1">
+        <h2>Quick and easy</h2>
+        <h2>Save time, save money!</h2>
+        <h3>Find your next stay---> </h3>
+        <div class="go">
+          <button class="button1"><a href="service.html">Booking Room</a></button>
+        </div>
+        <div class="road"><img src="Image/travel.png" alt="walk"></div>
+      </div>
+      <div class="column2">
+        <img src="Image/Hotel-left-side.jpg" alt="hotel-left-pic" class="pic1">
+        <img src="Image/Hotel-right-side.jpg" alt="hotel-right-pic" class="pic2">
+      </div>
+    </div>
+
+
+
+    <div class="div_welcome">
+      <div class="banner">
+        <h6>WELCOME TO </h6>
+        <p>Hotel Relax</p>
+      </div>
+      <p class="line"></p>
+      <p class="heading">Escape to our sophisticated retreat in Dhaka, Bangladesh</p>
+      <p class="intro">Indulge in a remarkable stay at Hotel Relax Dhaka. Whether you're traveling for business or
+        leisure, our hotel
+        in Dhaka offers an exceptional experience, boasting a prime location in the heart of the city, exquisitely
+        designed rooms, and an array of upscale amenities. Unwind in our spacious accommodations featuring complimentary
+        WiFi, sumptuous bedding, a flat-screen TV, well-stocked mini-bar, and a lavish en-suite bathroom. Delight your
+        palate with our hotel's selection of dining options, including a trattoria-style Italian restaurant and a
+        stylish lobby lounge. Rejuvenate your senses at our tranquil spa or take a refreshing dip in our breathtaking
+        rooftop infinity pool. Planning a business meeting or social event? Take advantage of our 45,000 square feet of
+        versatile venue space, complemented by expert event planning and catering services. Conveniently located in
+        Dhaka and oters place but Hotel Relax
+        Dhaka is the perfect choice for your stay in Bangladesh.</p>
+    </div>
+
+
+
+    <div class="div4">
+      <p class="p1">Our Exclusive Offers</p>
+      <div class="div4-content">
+        <div class="column1">
+          <p class="p2">Event Base</p>
+          <img src="Image/Event-base.png" alt="Event Base Image">
+        </div>
+        <div class="column2">
+          <p class="p2">Hourly Base</p>
+          <img src="Image/Hourly-base.png" alt="Hourly Base Image">
+        </div>
+        <div class="column3">
+          <p class="p2">Daily Base</p>
+          <img src="Image/Daily-base.png" alt="Daily Base Image">
+        </div>
+        <div class="column4">
+          <p class="p2">Weekly Base</p>
+          <img src="Image/Weekly-base.png" alt="Weekly Base Image">
+        </div>
+        <div class="column5">
+          <p class="p2">Monthly Base</p>
+          <img src="Image/Monthly-base.png" alt="Monthly Base Image">
+        </div>
+      </div>
+    </div>
+
+
+    <div class="div5">
+      <p>Popular Room</p>
+      <div class="div5-content">
+        <div class="column1">
+          <img src="Image/Diamond1.jpg" alt="Diamond Room" class="blurry-image">
+          <p>Diamond</p>
+        </div>
+        <div class="column2">
+          <img src="Image/Golden1.jpg" alt="Golden Room" class="blurry-image">
+          <p>Golden</p>
+        </div>
+        <div class="column3">
+          <img src="Image/Bronge1.jpg" alt="Bronge Room" class="blurry-image">
+          <p>Bronge</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+
+
+  <div class="sections-container">
+    <!-- Section 1: Help -->
+    <section class="section">
+      <h3 class="section-heading">Help</h3>
+      <ul class="section-list">
+        <li><a href="#">Help center</a></li>
+        <li><a href="#">FAQs</a></li>
+        <li><a href="#">Privacy policy</a></li>
+        <li><a href="#">Cookie policy</a></li>
+        <li><a href="#">Terms of use</a></li>
+      </ul>
+    </section>
+
+    <!-- Section 2: Company -->
+    <section class="section">
+      <h3 class="section-heading">Company</h3>
+      <ul class="section-list">
+        <li><a href="#">About us</a></li>
+        <li><a href="#">Careers</a></li>
+        <li><a href="#">Press</a></li>
+        <li><a href="#">Blog</a></li>
+      </ul>
+    </section>
+
+    <!-- Section 3: Destinations -->
+    <section class="section">
+      <h3 class="section-heading">Outlets</h3>
+      <ul class="section-list">
+        <li><a href="#">Dhaka</a></li>
+        <li><a href="#">Cox's Bazar</a></li>
+        <li><a href="#">Sylhet</a></li>
+        <li><a href="#">Bandarban</a></li>
+        <li><a href="#">Sundarbans</a></li>
+        <li><a href="#">Rangamati</a></li>
+
+      </ul>
+    </section>
+
+    <!-- Section 4: Partner with us -->
+    <section class="section">
+      <h3 class="section-heading">Partner with us</h3>
+      <ul class="section-list">
+        <li><a href="#">RT partner portal</a></li>
+        <li><a href="#">Partner Hub</a></li>
+        <li><a href="#">Advertise on RT</a></li>
+        <li><a href="#">Affiliates</a></li>
+        <li><a href="#">Connectivity partners</a></li>
+      </ul>
+    </section>
+
+    <!-- Section 5: Get the app -->
+    <section class="section">
+      <h3 class="section-heading">Get the app</h3>
+      <ul class="section-list">
+        <li><a href="#">iOS app</a></li>
+        <li><a href="#">Android app</a></li>
+      </ul>
+    </section>
+  </div>
+  <!-- -------------------------HOME PAGE CONTET END---------------------------- -->
+
+
+
+  <!-- -------------------------FOOTER START---------------------------- -->
+  <div class="footer">
+    <p>Copyright © 2023 - 2024 By Hotel Relax | Designed By Rayhan</p>
+  </div>
+  <!-- -------------------------FOOTER END---------------------------- -->
+
+
+  <!-- JAVA SCRIPT LINK -->
+  <script src="script.js"></script>
+
+</body>
+
+</html>

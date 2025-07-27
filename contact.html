@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hotel Relax - contact</title>
+    <link rel="stylesheet" href="style.css"/>
+    <!-- Unicons -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+    <style>
+        .nav_link:nth-child(4) {
+            color: blue; 
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- ----------------------HEADER START---------------------------- -->
+    <header class="header">
+        <nav class="nav">
+            <a href="index.html" class="nav_logo">
+                <img src="Image/Logo.png" alt="Logo">
+            </a>
+
+            <ul class="nav_items">
+                <li class="nav_item">
+                    <a href="index.html" class="nav_link">Home</a>
+                    <a href="about.html" class="nav_link">About Us</a>
+                    <a href="service.html" class="nav_link">Services</a>
+                    <a href="contact.html" class="nav_link">Contact</a>
+                </li>
+            </ul>
+
+            <button class="button" id="form-open">Login</button>
+            <button class="button" id="user_info" style="display: none;">UserName</button>
+            <button class="button" id="logout" style="display: none;">Logout</button>
+
+        </nav>
+    </header>
+    <!-- -------------------------HEADER END---------------------------- -->
+
+
+
+
+    <!-- -------------------------LOGIN AND SIGN UP FORM START---------------------------- -->
+    <!-- Home -->
+    <div class="home">
+        <div class="form_container">
+            <i class="uil uil-times form_close"></i>
+
+            <!-- Login From -->
+            <div class="form login_form">
+                <form action="#" id="login-form">
+                    <h2>Login</h2>
+
+                    <div class="input_box">
+                        <input type="email" placeholder="Enter your email" required />
+                        <i class="uil uil-envelope-alt email"></i>
+                    </div>
+                    <div class="input_box">
+                        <input type="password" placeholder="Enter your password" required />
+                        <i class="uil uil-lock password"></i>
+                        <i class="uil uil-eye-slash pw_hide"></i>
+                    </div>
+                    <div class="option_field">
+                        <span class="checkbox">
+                            <input type="checkbox" id="check" />
+                            <label for="check">Remember me</label>
+                        </span>
+                        <a href="#" class="forgot_pw">Forgot password?</a>
+                    </div>
+
+                    <button class="button">Login</button>
+
+                    <div class="login_signup">Don't have an account? <a href="#" id="signup">Sign up</a></div>
+                </form>
+            </div>
+
+
+            <!-- Signup Form -->
+            <div class="form signup_form">
+                <form action="#" id="signup-form">
+                    <h2>Registration</h2>
+
+                    <div class="input_box">
+                        <input type="text" placeholder="Enter your name" required />
+                        <i class="uil uil-user name"></i> <!-- Icon for name -->
+                    </div>
+                    <div class="input_box">
+                        <input type="tel" placeholder="Enter your phone" required />
+                        <i class="uil uil-phone phone"></i> <!-- Icon for phone -->
+                    </div>
+                    <div class="input_box">
+                        <input type="email" placeholder="Enter your email" required />
+                        <i class="uil uil-envelope-alt email"></i>
+                    </div>
+                    <div class="input_box">
+                        <input type="password" placeholder="Create password" required />
+                        <i class="uil uil-lock password"></i>
+                        <i class="uil uil-eye-slash pw_hide"></i>
+                    </div>
+
+                    <button class="button">Sign Up</button>
+
+                    <div class="login_signup">Already have an account? <a href="#" id="login">Login</a></div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- ------------------LOGIN AND SIGN UP FORM END---------------------------- -->
+
+
+
+    <!-- ---------------------------USER INFORMATION START--------------------------- -->
+
+    <!-- USER INFORMATION DISPLAY -->
+    <div class="userInfo" style="display: none;">
+        <div class="user-info-content">
+            <h2>Profile</h2>
+            <p>Name: <span id="user-name"></span></p>
+            <p>Phone: <span id="user-phone"></span></p>
+            <p>Email: <span id="user-email"></span></p>
+            <button id="ok-btn">OK</button>
+        </div>
+    </div>
+
+
+
+    <!-- ---------------------------USER INFORMATION END--------------------------- -->
+
+
+
+
+    <!-- ------------------------HOME PAGE CONTENT START---------------------------- -->
+    <div class="index">
+
+
+        <div class="contactHeadding">
+            <p>Contact Details</p>
+        </div>
+
+        <div class="main">
+            <section class="contact-info">
+                <div class="address">
+                    <h3>Address: </h3>
+                    <p>Hotel Relax</p>
+                    <p>Dhaka, Bangladesh (main branch)</p>
+                    <p>ZIP: 1000</p>
+                </div>
+
+                <div>
+                    <h3>Phone:</h3>
+                    <p>Main Line: +880 123-4567</p>
+                    <p>Reservations: +880 987-6543</p>
+                </div>
+
+                <div>
+                    <h3>Email:</h3>
+                    <p>General Inquiries: info@hotelrelax.com</p>
+                    <p>Reservations: reservations@hotelrelax.com</p>
+                    <p>Customer Support: support@hotelrelax.com</p>
+                </div>
+            </section>
+            <section class="social-media">
+                <h2>Social Media:</h2>
+                <p>Follow us on social media for updates, promotions, and more!</p>
+                <ul>
+                    <li><a href="https://www.facebook.com/HotelRelaxOfficial">Facebook</a></li>
+                    <li><a href="https://www.instagram.com/HotelRelaxGram">Instagram</a></li>
+                    <li><a href="https://twitter.com/HotelRelaxTweets">Twitter</a></li>
+                </ul>
+            </section>
+            <section class="feedback">
+                <h2>Feedback:</h2>
+                <p>We are constantly striving to improve our services. Your feedback is invaluable to us. Please share
+                    your thoughts and suggestions by filling out our <a href="#">feedback form</a>.</p>
+            </section>
+            <section class="map">
+                <h2>Map:</h2>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7301.038997701929!2d90.34676759250608!3d23.80011908101993!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c0e96fce29dd%3A0x6ccd9e51aba9e64d!2sMirpur-1%2C%20Dhaka!5e0!3m2!1sen!2sbd!4v1715481306647!5m2!1sen!2sbd"
+                    width="900" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </section>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+        <div class="sections-container">
+            <!-- Section 1: Help -->
+            <section class="section">
+                <h3 class="section-heading">Help</h3>
+                <ul class="section-list">
+                    <li><a href="#">Help center</a></li>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">Privacy policy</a></li>
+                    <li><a href="#">Cookie policy</a></li>
+                    <li><a href="#">Terms of use</a></li>
+                </ul>
+            </section>
+
+            <!-- Section 2: Company -->
+            <section class="section">
+                <h3 class="section-heading">Company</h3>
+                <ul class="section-list">
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Press</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+            </section>
+
+            <!-- Section 3: Destinations -->
+            <section class="section">
+                <h3 class="section-heading">Outlets</h3>
+                <ul class="section-list">
+                    <li><a href="#">Dhaka</a></li>
+                    <li><a href="#">Cox's Bazar</a></li>
+                    <li><a href="#">Sylhet</a></li>
+                    <li><a href="#">Bandarban</a></li>
+                    <li><a href="#">Sundarbans</a></li>
+                    <li><a href="#">Rangamati</a></li>
+
+                </ul>
+            </section>
+
+            <!-- Section 4: Partner with us -->
+            <section class="section">
+                <h3 class="section-heading">Partner with us</h3>
+                <ul class="section-list">
+                    <li><a href="#">RT partner portal</a></li>
+                    <li><a href="#">Partner Hub</a></li>
+                    <li><a href="#">Advertise on RT</a></li>
+                    <li><a href="#">Affiliates</a></li>
+                    <li><a href="#">Connectivity partners</a></li>
+                </ul>
+            </section>
+
+            <!-- Section 5: Get the app -->
+            <section class="section">
+                <h3 class="section-heading">Get the app</h3>
+                <ul class="section-list">
+                    <li><a href="#">iOS app</a></li>
+                    <li><a href="#">Android app</a></li>
+                </ul>
+            </section>
+        </div>
+        <!-- -------------------------HOME PAGE CONTET END---------------------------- -->
+
+
+
+        <!-- -------------------------FOOTER START---------------------------- -->
+        <div class="footer">
+            <p>Copyright © 2023 - 2024 By Hotel Relax | Designed By Rayhan</p>
+        </div>
+        <!-- -------------------------FOOTER END---------------------------- -->
+
+
+        <!-- JAVA SCRIPT LINK -->
+        <script src="script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hotel Relax - about</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Unicons -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+    <style>
+        .nav_link:nth-child(2) {
+            color: blue; 
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- ----------------------HEADER START---------------------------- -->
+    <header class="header">
+        <nav class="nav">
+            <a href="index.html" class="nav_logo">
+                <img src="Image/Logo.png" alt="Logo">
+            </a>
+
+            <ul class="nav_items">
+                <li class="nav_item">
+                    <a href="index.html" class="nav_link">Home</a>
+                    <a href="about.html" class="nav_link">About Us</a>
+                    <a href="service.html" class="nav_link">Services</a>
+                    <a href="contact.html" class="nav_link">Contact</a>
+                </li>
+            </ul>
+
+            <button class="button" id="form-open">Login</button>
+            <button class="button" id="user_info" style="display: none;">UserName</button>
+            <button class="button" id="logout" style="display: none;">Logout</button>
+
+        </nav>
+    </header>
+    <!-- -------------------------HEADER END---------------------------- -->
+
+
+
+
+    <!-- -------------------------LOGIN AND SIGN UP FORM START---------------------------- -->
+    <!-- Home -->
+    <div class="home">
+        <div class="form_container">
+            <i class="uil uil-times form_close"></i>
+
+            <!-- Login From -->
+            <div class="form login_form">
+                <form action="#" id="login-form">
+                    <h2>Login</h2>
+
+                    <div class="input_box">
+                        <input type="email" placeholder="Enter your email" required />
+                        <i class="uil uil-envelope-alt email"></i>
+                    </div>
+                    <div class="input_box">
+                        <input type="password" placeholder="Enter your password" required />
+                        <i class="uil uil-lock password"></i>
+                        <i class="uil uil-eye-slash pw_hide"></i>
+                    </div>
+                    <div class="option_field">
+                        <span class="checkbox">
+                            <input type="checkbox" id="check" />
+                            <label for="check">Remember me</label>
+                        </span>
+                        <a href="#" class="forgot_pw">Forgot password?</a>
+                    </div>
+
+                    <button class="button">Login</button>
+
+                    <div class="login_signup">Don't have an account? <a href="#" id="signup">Sign up</a></div>
+                </form>
+            </div>
+
+
+            <!-- Signup Form -->
+            <div class="form signup_form">
+                <form action="#" id="signup-form">
+                    <h2>Registration</h2>
+
+                    <div class="input_box">
+                        <input type="text" placeholder="Enter your name" required />
+                        <i class="uil uil-user name"></i> <!-- Icon for name -->
+                    </div>
+                    <div class="input_box">
+                        <input type="tel" placeholder="Enter your phone" required />
+                        <i class="uil uil-phone phone"></i> <!-- Icon for phone -->
+                    </div>
+                    <div class="input_box">
+                        <input type="email" placeholder="Enter your email" required />
+                        <i class="uil uil-envelope-alt email"></i>
+                    </div>
+                    <div class="input_box">
+                        <input type="password" placeholder="Create password" required />
+                        <i class="uil uil-lock password"></i>
+                        <i class="uil uil-eye-slash pw_hide"></i>
+                    </div>
+
+                    <button class="button">Sign Up</button>
+
+                    <div class="login_signup">Already have an account? <a href="#" id="login">Login</a></div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- ------------------LOGIN AND SIGN UP FORM END---------------------------- -->
+
+
+
+    <!-- ---------------------------USER INFORMATION START--------------------------- -->
+
+    <!-- USER INFORMATION DISPLAY -->
+    <div class="userInfo" style="display: none;">
+        <div class="user-info-content">
+            <h2>Profile</h2>
+            <p>Name: <span id="user-name"></span></p>
+            <p>Phone: <span id="user-phone"></span></p>
+            <p>Email: <span id="user-email"></span></p>
+            <button id="ok-btn">OK</button>
+        </div>
+    </div>
+
+
+
+    <!-- ---------------------------USER INFORMATION END--------------------------- -->
+
+
+
+
+    <!-- ------------------------HOME PAGE CONTENT START---------------------------- -->
+    <div class="index">
+
+
+
+
+        <div class="div_welcome">
+            <div class="banner">
+                <h6>WELCOME TO </h6>
+                <p>Hotel Relax</p>
+            </div>
+            <p class="line"></p>
+            <p class="heading">ABOUT US</p>
+
+            <div class="intro">
+                <p>Hotel Relax is a luxurious hotel chain with multiple outlets across Bangladesh. Whether you're
+                    traveling for business or leisure, our hotels offer exceptional comfort, convenience, and
+                    personalized service to ensure a memorable stay.</p>
+                <p>Our outlets are strategically located in key cities and tourist destinations, including Dhaka, Cox's
+                    Bazar, Sylhet, Bandarban, Sundarbans, and Rangamati, allowing guests to experience the best of each
+                    region.</p>
+                <p>At Hotel Relax, we prioritize guest satisfaction above all else. From elegant accommodations to
+                    world-class amenities and impeccable dining options, every aspect of our hotels is designed to
+                    exceed your expectations.</p>
+                <p>Experience unparalleled hospitality and discover true relaxation at Hotel Relax. We look forward to
+                    welcoming you!</p>
+            </div>
+        </div>
+
+
+
+
+
+        <section class="outlets">
+            <h2>Our Outlets</h2>
+            <ul>
+                <li><strong>Dhaka:</strong> Located in the heart of the bustling capital city, our Dhaka outlet offers
+                    easy access to business districts, shopping centers, and cultural landmarks.</li>
+                <li><strong>Cox's Bazar:</strong> Nestled along the picturesque coastline, our Cox's Bazar outlet boasts
+                    stunning ocean views and luxurious accommodations, making it an ideal destination for beach lovers.
+                </li>
+                <li><strong>Sylhet:</strong> Surrounded by lush greenery and tea gardens, our Sylhet outlet provides a
+                    tranquil retreat amidst nature, perfect for those seeking relaxation and adventure.</li>
+                <li><strong>Bandarban:</strong> Set amidst the breathtaking hills and forests of Bandarban, our outlet
+                    offers a serene escape for nature enthusiasts and outdoor adventurers.</li>
+                <li><strong>Sundarbans:</strong> Located near the world's largest mangrove forest, our Sundarbans outlet
+                    provides a unique opportunity to explore the rich biodiversity of this UNESCO World Heritage Site.
+                </li>
+                <li><strong>Rangamati:</strong> Situated by the serene waters of Kaptai Lake, our Rangamati outlet
+                    offers breathtaking views and a peaceful ambiance, perfect for a rejuvenating getaway.</li>
+            </ul>
+        </section>
+
+
+
+
+
+
+
+
+        <div class="sections-container">
+            <!-- Section 1: Help -->
+            <section class="section">
+              <h3 class="section-heading">Help</h3>
+              <ul class="section-list">
+                <li><a href="#">Help center</a></li>
+                <li><a href="#">FAQs</a></li>
+                <li><a href="#">Privacy policy</a></li>
+                <li><a href="#">Cookie policy</a></li>
+                <li><a href="#">Terms of use</a></li>
+              </ul>
+            </section>
+        
+            <!-- Section 2: Company -->
+            <section class="section">
+              <h3 class="section-heading">Company</h3>
+              <ul class="section-list">
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Press</a></li>
+                <li><a href="#">Blog</a></li>
+              </ul>
+            </section>
+        
+            <!-- Section 3: Destinations -->
+            <section class="section">
+              <h3 class="section-heading">Outlets</h3>
+              <ul class="section-list">
+                <li><a href="#">Dhaka</a></li>
+                <li><a href="#">Cox's Bazar</a></li>
+                <li><a href="#">Sylhet</a></li>
+                <li><a href="#">Bandarban</a></li>
+                <li><a href="#">Sundarbans</a></li>
+                <li><a href="#">Rangamati</a></li>
+        
+              </ul>
+            </section>
+        
+            <!-- Section 4: Partner with us -->
+            <section class="section">
+              <h3 class="section-heading">Partner with us</h3>
+              <ul class="section-list">
+                <li><a href="#">RT partner portal</a></li>
+                <li><a href="#">Partner Hub</a></li>
+                <li><a href="#">Advertise on RT</a></li>
+                <li><a href="#">Affiliates</a></li>
+                <li><a href="#">Connectivity partners</a></li>
+              </ul>
+            </section>
+        
+            <!-- Section 5: Get the app -->
+            <section class="section">
+              <h3 class="section-heading">Get the app</h3>
+              <ul class="section-list">
+                <li><a href="#">iOS app</a></li>
+                <li><a href="#">Android app</a></li>
+              </ul>
+            </section>
+          </div>
+        <!-- -------------------------HOME PAGE CONTET END---------------------------- -->
+
+
+
+        <!-- -------------------------FOOTER START---------------------------- -->
+        <div class="footer">
+            <p>Copyright © 2023 - 2024 By Hotel Relax | Designed By Rayhan</p>
+        </div>
+        <!-- -------------------------FOOTER END---------------------------- -->
+
+
+        <!-- JAVA SCRIPT LINK -->
+        <script src="script.js"></script>
+
+</body>
+
+</html>
